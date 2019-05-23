@@ -127,7 +127,7 @@ img {
 .navbar-custom .nav li a {
   font-weight: 800;
   color: {{ site.navbar-text-col }};
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .navbar-custom .navbar-brand:hover,
