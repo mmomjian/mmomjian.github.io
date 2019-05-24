@@ -3,13 +3,14 @@ layout: page
 title: Matthew Momjian
 subtitle: Future physician.
 use-site-title: true
+image: /img/smile1.jpg
+
 ---
 
 ## Welcome!
 
 Please feel free to browse the above links to find out a little more about myself.
 
-image: /img/smile1.jpg
 
 <!--<div class="posts-list">
   {% for post in paginator.posts %}
