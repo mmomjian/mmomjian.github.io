@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: index
 title: Matthew Momjian
 subtitle: Future physician.
 use-site-title: true
-image: /img/smile1.jpg
 
 ---
 
