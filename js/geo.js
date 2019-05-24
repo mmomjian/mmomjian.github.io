@@ -9,6 +9,8 @@ function initMap() {
       document.getElementById('map'), {zoom: 2, center: myLatLng});
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: myLatLng, map: map});
+addMapPins(matthew_momjian_geo_locations, "Travel");
+
 }
 	function createMarker(map_pins, lati, lngi, locstr) {
       // create point
@@ -56,4 +58,3 @@ function initMap() {
 	}
     }
 
-		    addMapPins(matthew_momjian_geo_locations, "Travel");
