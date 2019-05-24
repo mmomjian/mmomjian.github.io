@@ -9,6 +9,8 @@ use-site-title: true
 
 Please feel free to browse the above links to find out a little more about myself.
 
+image: /img/smile1.jpg
+
 <!--<div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
