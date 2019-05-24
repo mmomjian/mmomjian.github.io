@@ -23,7 +23,7 @@ addMapPins(matthew_momjian_geo_locations, "Travel", map);
       });
 
       // create info box
-      var infowindow = new InfoBox({
+     /* var infowindow = new InfoBox({
         content: locstr,
         disableAutoPan: true,
         closeBoxURL: '',
@@ -36,7 +36,7 @@ addMapPins(matthew_momjian_geo_locations, "Travel", map);
       });
       google.maps.event.addListener(marker, 'mouseout', function() {
         infowindow.close(map, marker);
-      });
+      });*/
     }
 
     // Add map pins
