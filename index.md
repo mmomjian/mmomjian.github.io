@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: page
 title: Matthew Momjian
 subtitle: Future physician.
 use-site-title: true
