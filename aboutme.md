@@ -1,16 +1,10 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Qualifications, experience, and activities.
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I am a 26-year-old healthcare provider in the Philadelphia area. My current goals include post-baccalaureate coursework in preparation for medical school. In my free time, I enjoy the outdoors, computer programming, and swimming.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+For further details, please feel free to browse [my CV](content/Momjian CV.pdf).
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
