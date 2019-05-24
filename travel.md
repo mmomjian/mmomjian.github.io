@@ -1,26 +1,8 @@
 ---
-layout: page
+layout: travel
 title: Travel
 subtitle: Domestic and international adventures.
 ---
 
 I have had the privilege of extensive travel throughout my life. Many of those destinations are featured below.
 
-<!-- Google Maps, use https so outer https page can access -->
-
-
-
-  <div class="mapsize border" id="map"></div>
-
-  <p id="map_details"></p>
-
-  
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=XXXXYYYYY">
-    </script>
-  
-
-  <!-- This file is included separately because it changes often and we want
-       changes in the file modification time to cause a client cache flush. -->
-  <script src="/main/cities/geo_locations.js" type="text/javascript"></script>
-  <script src="/main/js/geo/geo.js" type="text/javascript"></script>
