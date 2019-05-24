@@ -59,4 +59,4 @@ function initMap() {
 	}
     }
 
-		    addMapPins(matthew_momjian_geo_locations, "Travel");</script>
+		    addMapPins(matthew_momjian_geo_locations, "Travel");
