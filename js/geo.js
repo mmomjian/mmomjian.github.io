@@ -56,7 +56,7 @@ function display_map() {
         position: latlng,
         map: map,
         // in 'both' mode, display family pins offset and below
-        icon: (map_pins == matthew_momjian_geo_locations ? marker_img_p :
+        icon: (map_pins == matthew_momjian_geo_locations ? marker_img_p,
         shadow: (map_pins == matthew_momjian_geo_locations) ? marker_shadow : marker_shadow_offset,
 	zIndex: map_pins == matthew_momjian_geo_locations ? 2 : 1
       });
