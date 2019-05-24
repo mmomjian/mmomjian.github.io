@@ -99,4 +99,4 @@ yelp:
 skype:
   name: "Skype"
   baseURL: "skype:"
-  icon:"fa-skype"
+  icon: "fa-skype"
