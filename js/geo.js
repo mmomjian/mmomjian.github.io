@@ -3,7 +3,7 @@ function initMap() {
   // The location of Uluru
   var uluru = {lat: -25.344, lng: 131.036};
   // The map, centered at Uluru
-	var myLatLng = new google.maps.LatLng(15, 11);
+	var myLatLng = {lat: 15, lng: 11}; // new google.maps.LatLng(15, 11);
 
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 2, center: myLatLng});
