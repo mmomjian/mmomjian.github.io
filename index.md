@@ -8,7 +8,7 @@ use-site-title: true
 
 ## Welcome!
 
-Please feel free to browse the above links to find out a little more about myself.
+Please feel free to browse the above links to learn more about me.
 
 
 <!--<div class="posts-list">
