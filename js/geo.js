@@ -7,7 +7,6 @@ var mapCenter = {lat: 15, lng: 11}; // new google.maps.LatLng(15, 11);
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 2, center: mapCenter});
   // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: mapCenter, map: map});
 addMapPins(matthew_momjian_geo_locations, "Travel", map);
 
 }
