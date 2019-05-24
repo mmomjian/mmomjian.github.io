@@ -17,7 +17,7 @@ baseurl: ""
 title: Matthew Momjian
 
 # Short description of your site
-description: "Matthew Momjian: socials, curriculum vitae, and photos."
+description: "momjian.me"
 
 # --- Navigation bar options --- #
 
@@ -99,7 +99,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "Momjian.me"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "momjian.me"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
