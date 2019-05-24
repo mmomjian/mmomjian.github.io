@@ -5,7 +5,9 @@ subtitle: Future physician.
 use-site-title: true
 ---
 
-Welcome! Please feel free to browse the above links to find out a little more about myself.
+## Welcome!
+
+Please feel free to browse the above links to find out a little more about myself.
 
 <!--<div class="posts-list">
   {% for post in paginator.posts %}
