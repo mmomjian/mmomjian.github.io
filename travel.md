@@ -1,5 +1,5 @@
 ---
-layout: travel
+layout: page
 title: Travel
 subtitle: Domestic and international adventures.
 ---
