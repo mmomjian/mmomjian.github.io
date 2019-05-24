@@ -1,5 +1,5 @@
 // geo locations
-var momjian_us_pg_geo_locations = [
+var matthew_momjian_geo_locations = [
 
     // point directly to the house
     ["USA", "My home, Newtown Square, Pennsylvania", "", 40.0035, -75.4005],
@@ -170,16 +170,6 @@ var momjian_us_pg_geo_locations = [
     ["USA", "Wayne, Pennsylvania", "2010", 40.0438889, -75.3880556],
     ["USA", "Westford, Massachusetts", "2009, 2010", 42.5791667, -71.4383333],
     ["USA", "Waltham, Massachusetts", "2015", 42.3763889, -71.2361111],
-
-];
-
-
-var momjian_us_fam_geo_locations = [
-
-    // point directly to the house
-    ["USA", "My home, Newtown Square, Pennsylvania", "", 40.0035, -75.4005],
-
-// current as of 2013-08-17
 
     ["Armenia", "Erivan", "2004 (Bruce, Matthew, 5 days), 2012 (Matthew, 7 days), 2015 (Bruce, Christine, Catherine, 7 days)", 40.1811111, 44.5136111],
     ["Armenia", "Vardenis", "2012 (Matthew, 6 days)", 40.1805556, 45.7283333],
