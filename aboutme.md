@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Matthew Momjian
-description: About Me
+title: About Me
 subtitle: Qualifications, experience, and activities.
 ---
 
