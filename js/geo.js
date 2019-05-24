@@ -8,17 +8,17 @@ var mapCenter = {lat: 15, lng: 11}; // new google.maps.LatLng(15, 11);
       document.getElementById('map'), {zoom: 2, center: mapCenter});
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: mapCenter, map: map});
-addMapPins(matthew_momjian_geo_locations, "Travel");
+addMapPins(matthew_momjian_geo_locations, "Travel", map);
 
 }
-	function createMarker(map_pins, lati, lngi, locstr) {
+	function createMarker(mapHandle, map_pins, lati, lngi, locstr) {
       // create point
       var latlng = {lat: lati, lng: lngi};
 
       // create marker
       var marker = new google.maps.Marker({
         position: latlng,
-        map: map,
+        map: mapHandle,
         // in 'both' mode, display family pins offset and below
       });
 
@@ -40,7 +40,7 @@ addMapPins(matthew_momjian_geo_locations, "Travel");
     }
 
     // Add map pins
-    function addMapPins(map_pins, description) {
+    function addMapPins(map_pins, description,mapHandle) {
 	for (var loc = 0; loc < map_pins.length; loc++)
 	{
 	    var years = map_pins[loc][2];
@@ -49,7 +49,7 @@ addMapPins(matthew_momjian_geo_locations, "Travel");
 			years = years.replace(/\), */g, '),<br />');
 	    years = '<div style="text-align: center">' + years + '</div>';
 
-	    createMarker(map_pins,
+	    createMarker(mapHandle, map_pins,
 			 map_pins[loc][3],
 			 map_pins[loc][4],
 			 map_pins[loc][1] + map_pins[loc][0],
