@@ -3,6 +3,15 @@ layout: null
 ---
 
 @import url("pygment_highlights.css");
+/* CUSTOM */
+
+div.mapsize {
+/* Height is best in px, rather than % so the page can be rendered faster */
+	height: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
 
 /* --- General --- */
 
