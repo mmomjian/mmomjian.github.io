@@ -8,7 +8,7 @@ use-site-title: true
 
 ## Welcome!
 
-Please feel free to browse the above links to learn more about me.
+I am a healthcare provider in the Philadelphia area planning to begin medical school in the near future. I have extensive experience in leadership, mentoring, and pulic engagement. Please feel free to browse the above links to learn more about me.
 
 
 <!--<div class="posts-list">
