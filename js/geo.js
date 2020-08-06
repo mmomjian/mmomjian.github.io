@@ -62,7 +62,7 @@ infowindow.close();
 	    createMarker(mapHandle, map_pins,
 			 map_pins[loc][3],
 			 map_pins[loc][4],
-			 (map_pins[loc][1] + ', ' + map_pins[loc][0] + years));
+			 (map_pins[loc][1] + ', ' + map_pins[loc][0] + '<br>' + years));
 	}
     }
 
