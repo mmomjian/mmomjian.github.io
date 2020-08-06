@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Matthew Momjian
-subtitle: Prospective physician. Philadelphia, PA.
+subtitle: Student Physician, Philadelphia College of Osteopathic Medicine '24
 use-site-title: true
 
 ---
 
 ## Welcome!
 
-I am a healthcare provider in the Philadelphia area planning to begin medical school in the near future. I have extensive experience in leadership, mentoring, and pulic engagement. Please feel free to browse the above links to learn more about me.
+I am a medical student in the Philadelphia area. I have extensive experience in leadership, mentoring, and pulic engagement. Please feel free to browse the above links to learn more about me.
 
 
 <!--<div class="posts-list">
