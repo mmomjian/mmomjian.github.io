@@ -18,7 +18,7 @@ addMapPins(matthew_momjian_geo_locations, "Travel", map);
       var marker = new google.maps.Marker({
         position: latlng,
         map: mapHandle,
-		title: locstr
+		//title: locstr
         // in 'both' mode, display family pins offset and below
       });
 	  var infowindow = new google.maps.InfoWindow();
