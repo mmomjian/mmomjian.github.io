@@ -18,11 +18,12 @@ addMapPins(matthew_momjian_geo_locations, "Travel", map);
       var marker = new google.maps.Marker({
         position: latlng,
         map: mapHandle,
+		title: locstr
         // in 'both' mode, display family pins offset and below
       });
 
       // create info box
-     /* var infowindow = new InfoBox({
+      /*var infowindow = new InfoBox({
         content: locstr,
         disableAutoPan: true,
         closeBoxURL: '',
@@ -30,12 +31,13 @@ addMapPins(matthew_momjian_geo_locations, "Travel", map);
       });
 
       // Show this marker's description when the mouse is over it
-      google.maps.event.addListener(marker, 'mouseover', function() {
-        infowindow.open(map, marker);
-      });
-      google.maps.event.addListener(marker, 'mouseout', function() {
-        infowindow.close(map, marker);
-      });*/
+      //google.maps.event.addListener(marker, 'mouseover', function() {
+      //  infowindow.open(map, marker);
+      //});
+      //google.maps.event.addListener(marker, 'mouseout', function() {
+      //  infowindow.close(map, marker);
+      //});
+	*/
     }
 
     // Add map pins
@@ -51,8 +53,7 @@ addMapPins(matthew_momjian_geo_locations, "Travel", map);
 	    createMarker(mapHandle, map_pins,
 			 map_pins[loc][3],
 			 map_pins[loc][4],
-			 map_pins[loc][1] + map_pins[loc][0],
-			 years);
+			 (map_pins[loc][1] + map_pins[loc][0] + years));
 	}
     }
 
