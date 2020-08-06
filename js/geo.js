@@ -21,6 +21,15 @@ addMapPins(matthew_momjian_geo_locations, "Travel", map);
 		title: locstr
         // in 'both' mode, display family pins offset and below
       });
+	  var infowindow = new google.maps.InfoWindow();
+marker.addListener('mouseover', function() {
+infowindow.setContent(locstr);
+infowindow.open(map, marker);
+});
+// assuming you also want to hide the infowindow when user mouses-out
+marker.addListener('mouseout', function() {
+infowindow.close();
+});
 
       // create info box
       /*var infowindow = new InfoBox({
