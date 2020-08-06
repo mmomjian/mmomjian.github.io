@@ -15,7 +15,7 @@ var matthew_momjian_geo_locations = [
     ["Bahamas", "Half Moon Cay", "2008 (1 day)", 24.574, -75.952],
     ["Bahamas", "Nassau", "2006 (1 day), 2019 (1 day)", 25.0833333, -77.35],
     ["Belgium", "Brussels", "2013 (4 days)", 50.8333333, 4.3333333],
-    ["Belize", "Belize City", "2002 (1 day)", 17.4833333, -88.1833333],
+    ["Belize", "Belize City", "2009 (1 day)", 17.4833333, -88.1833333],
     ["Bermuda","King's Wharf", "2019 (2 days)", 32.325556, -64.835789],
     ["Canada", "Vancouver, British Columbia", "1996 (4 days)", 49.25, -123.1333333],
     ["Canada", "Victoria, British Columbia", "1996 (4 days)", 48.4333333, -123.35],
