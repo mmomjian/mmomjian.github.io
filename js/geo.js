@@ -57,12 +57,12 @@ infowindow.close();
 
 	    if (/\),/.test(years))
 			years = years.replace(/\), */g, '),<br />');
-	    years = '<div style="text-align: center">' + years + '</div>';
+	    //years = '<div style="text-align: center">' + years + '</div>';
 
 	    createMarker(mapHandle, map_pins,
 			 map_pins[loc][3],
 			 map_pins[loc][4],
-			 (map_pins[loc][1] + map_pins[loc][0] + years));
+			 (map_pins[loc][1] + ', ' + map_pins[loc][0] + years));
 	}
     }
 
