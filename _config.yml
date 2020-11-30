@@ -86,7 +86,7 @@ social-network-links:
   facebook: mmomjian
 
 
-#  youtube: user/deanat78
+youtube: matthewmomjian
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
@@ -94,11 +94,11 @@ social-network-links:
 #  yelp: yourname
 
 # Select which share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  google: false
-  linkedin: true
+#share-links-active:
+#  twitter: true
+#  facebook: true
+#  google: false
+#  linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
