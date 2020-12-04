@@ -1,7 +1,20 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-gem "github-pages", '193', group: :jekyll_plugins
+# Dependencies are bundled with the github-pages gem
+group :jekyll_plugins do
+  gem 'github-pages'
+  gem 'octopress-minify-html'
+end
 
-# enable tzinfo-data for local build
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'jekyll-paginate'
+group :test do
+  gem 'diff-lcs', platforms: :mswin
+  gem 'diffy'
+  gem 'fastimage'
+  gem 'html-proofer'
+  gem 'jsonlint'
+  gem 'kwalify'
+  gem 'rake'
+  gem 'rubocop'
+end
