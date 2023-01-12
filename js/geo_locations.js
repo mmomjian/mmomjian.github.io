@@ -98,6 +98,7 @@ var matthew_momjian_geo_locations = [
     ["USA", "Philip, South Dakota", "2018 (1 day)", 44.040231, -101.667130],
     ["USA", "Phoenix, Arizona", "2007 (8 days), 2018 (1 week)", 33.4483333, -112.0733333],
     ["USA", "Pittsburgh, Pennsylvania", "2007 (2 days)", 40.4405556, -79.9961111],
+    ["USA", "Pocono Pines, Pennsylvania", "2019 (6 days)", 41.1127580464673, -75.43863780195281],
     ["USA", "Portland, Oregon", "2008 (6 days), 2010 (8 days), 2011 (7 days)", 45.5236111, -122.6750000],
     ["USA", "Richmond, Virginia", "1994 (2 days)", 37.5536111, -77.4605556],
     ["USA", "Saint Augustine, Florida", "2012 (4 days)", 29.8944444, -81.3147222],
