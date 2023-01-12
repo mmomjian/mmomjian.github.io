@@ -6,7 +6,7 @@ var matthew_momjian_geo_locations = [
 
  
 
-    ["Armenia", "Erivan", "2004 (5 days), 2012 (7 days), 2022 (10 days)", 40.1811111, 44.5136111],
+    ["Armenia", "Yerevan", "2004 (5 days), 2012 (7 days), 2022 (10 days)", 40.1811111, 44.5136111],
     ["Armenia", "Vardenis", "2012 (6 days)", 40.1805556, 45.7283333],
     ["Aruba", "Oranjestad", "1995 (1 day)", 12.5166667, -70.0333333],
     ["Austria", "Salzburg", "2013 (1 day)", 47.8, 13.0333333],
