@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Matthew Momjian
-subtitle: Student Physician, Philadelphia College of Osteopathic Medicine '24
+subtitle: Student Physician - Philadelphia College of Osteopathic Medicine '24
 use-site-title: true
 
 ---
