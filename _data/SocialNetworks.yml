@@ -100,3 +100,8 @@ skype:
   name: "Skype"
   baseURL: "skype:"
   icon: "fa-skype"
+
+tiktok:
+  name: "TikTok"
+  baseURL: "https://tiktok.com/"
+  icon: "fa-tiktok"
