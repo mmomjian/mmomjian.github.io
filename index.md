@@ -8,7 +8,7 @@ use-site-title: true
 
 ## Welcome!
 
-I am a medical student in the Philadelphia area. I have extensive experience in leadership, mentoring, and pulic engagement. Please feel free to browse the above links to learn more about me.
+I am an anesthesiology resident physician in the Philadelphia area. I have extensive experience in leadership, mentoring, and pulic engagement. Please feel free to browse the above links to learn more about me.
 
 
 <!--<div class="posts-list">
