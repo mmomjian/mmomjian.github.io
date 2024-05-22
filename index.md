@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matthew Momjian
+title: Dr. Matthew Momjian, DO
 subtitle: Resident Physician
 use-site-title: true
 
