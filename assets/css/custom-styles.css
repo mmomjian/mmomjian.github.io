@@ -23,10 +23,12 @@
   --bg-color: #121212;
   --text-color: #e0e0e0;
   --link-color: #bb86fc;
+  --navbar-col: #121212;
+  --navbar-text-col: #e0e0e0;
 }
 
 /* Apply colors */
-body,header,footer,nav {
+body,footer {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
