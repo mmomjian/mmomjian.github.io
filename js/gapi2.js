@@ -30,7 +30,7 @@ async function initMap() {
       });
 
       // Show InfoWindow on marker click
-      marker.addListener("click", () => {
+      marker.addListener("gmp-click", () => {
         infoWindow.open(map, marker);
       });
 
