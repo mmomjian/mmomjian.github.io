@@ -28,6 +28,15 @@ let currentInfoWindow = null; // Store the currently opened InfoWindow
       map: map,
       position: { lat: lat, lng: lng },
       title: printlocation,
+  icon: {
+    url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+        <circle cx="10" cy="10" r="8" fill="red"/>
+      </svg>
+    `),
+    scaledSize: new google.maps.Size(10, 10), // Set the size of the marker
+  }
+
     });
 
 
@@ -47,25 +56,18 @@ let currentInfoWindow = null; // Store the currently opened InfoWindow
         currentInfoWindow = infoWindow;
       });
 
-      marker.addListener("mouseenter", () => {
-        if (currentInfoWindow) {
-          currentInfoWindow.close();
-        }
-        infoWindow.open(map, marker);
-        currentInfoWindow = infoWindow;
-      });
-
-      marker.addListener("mouseout", () => {
-        if (currentInfoWindow) {
-          currentInfoWindow.close();
-          currentInfoWindow = null;
-        }
-      });
-
 
 
 
   });
+
+// Close InfoWindow on any map click
+map.addListener("click", () => {
+  if (currentInfoWindow) {
+    currentInfoWindow.close();
+    currentInfoWindow = null;  // Reset currentInfoWindow after closing
+  }
+
 }
 
 initMap();

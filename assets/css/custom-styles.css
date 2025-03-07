@@ -57,3 +57,8 @@ a {
   box-shadow: none; /* Prevent any box-shadow on focus 
 }
 */
+
+/* Hide the close button in InfoWindow */
+.google-maps .gm-style-iw-closebtn {
+  display: none !important;
+}
