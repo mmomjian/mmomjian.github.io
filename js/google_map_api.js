@@ -64,8 +64,6 @@ function display_map() {
         infowindow.close(map, marker);
         in_mouseover = false;
       });
-        in_mouseover = false;
-      });
 
       // For touch screens
       google.maps.event.addListener(marker, 'mousedown', function() {
