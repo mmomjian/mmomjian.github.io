@@ -26,7 +26,7 @@
 }
 
 /* Apply colors */
-body {
+body,header,footer {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -45,10 +45,11 @@ a {
   font-size: 0.75rem;
   cursor: pointer;
 }*/
-#theme-toggle {
-  border: none; /* Remove the default border */
+/*#theme-toggle {
+  border: none;
 }
 #theme-toggle:focus {
-  outline: none; /* Remove the focus outline */
-  box-shadow: none; /* Prevent any box-shadow on focus */
+  outline: none;  Remove the focus outline 
+  box-shadow: none; /* Prevent any box-shadow on focus 
 }
+*/
