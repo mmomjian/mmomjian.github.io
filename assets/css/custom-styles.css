@@ -62,3 +62,4 @@ a {
 .gm-style-iw-chr .google-maps .gm-style-iw-closebtn {
   display: none !important;
 }
+.gm-style-iw + button {display: none;}
