@@ -42,6 +42,6 @@ a {
   width: 40px; /* Ensures a proper clickable area */
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 0.75rem;
   cursor: pointer;
 }
