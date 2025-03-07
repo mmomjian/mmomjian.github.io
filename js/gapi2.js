@@ -30,6 +30,7 @@ const isMobile = window.matchMedia("(pointer: coarse)").matches;
       title: printlocation,
     });
 
+      console.log(printlocation+years);
       // Create InfoWindow for subtitle/description
       const infoWindow = new google.maps.InfoWindow({
       content: `<div style="font-size: 14px; max-width: 200px; padding: 8px; background: rgba(255, 255, 255, 0.8); border-radius: 5px;">
