@@ -35,7 +35,7 @@ async function initMap() {
 
 
       // create info box
-      var infowindow = new InfoBox({
+      var infowindow = new google.maps.InfoWindow({
         content: `${printlocation}<br>${years}`,
         disableAutoPan: true,
         closeBoxURL: '',
