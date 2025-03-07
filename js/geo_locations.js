@@ -15,7 +15,7 @@ var matthew_momjian_geo_locations = [
     ["Belgium", "Brussels", "2013 (4 days)", 50.8333333, 4.3333333],
     ["Belize", "Belize City", "2009 (1 day)", 17.4833333, -88.1833333],
     ["Bermuda","King's Wharf", "2019 (2 days)", 32.325556, -64.835789],
-    ["Canada", "Niagara Falls, Ontario", 43.07871482, -79.08183207119671],
+    ["Canada", "Niagara Falls, Ontario", 43.07871482, -79.081832],
     ["Canada", "Vancouver, British Columbia", "1996 (4 days)", 49.25, -123.1333333],
     ["Canada", "Victoria, British Columbia", "1996 (4 days)", 48.4333333, -123.35],
     ["Canada", "Dartmouth, Nova Scotia", "2018 (1 day)", 44.711495, -63.583759],
