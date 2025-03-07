@@ -3,7 +3,7 @@ let map;
 
 async function initMap() {
 
-//let currentInfoWindow = null; // Store the currently opened InfoWindow
+let currentInfoWindow = null; // Store the currently opened InfoWindow
 //const isMobile = false; // window.matchMedia("(pointer: coarse)").matches;
 
   // The location of Uluru
