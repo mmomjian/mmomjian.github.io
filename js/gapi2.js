@@ -31,15 +31,12 @@ async function initMap() {
     });
 
 
-      // create info box
-      var infowindow = new google.maps.InfoWindow({
-        content: `${printlocation}<br>${years}`,
-        disableAutoPan: true,
-        closeBoxURL: '',
-        enableEventPropagation: true, // used for map labels
-//        pixelOffset: info_offset
-      });
-
+    const infoWindow = new google.maps.InfoWindow({
+      content: `<div style="font-size: 14px; max-width: 180px; padding: 6px; 
+                         background: rgba(255, 255, 255, 0.9); border-radius: 5px;">
+                 <strong>${printlocation}</strong><br>${years}
+               </div>`
+    });
 
 
 
