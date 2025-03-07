@@ -24,17 +24,19 @@ let currentInfoWindow = null; // Store the currently opened InfoWindow
     const [country, city, years, lat, lng] = location;
     var printlocation = city ? `${city}, ${country}` : country;
 
+const redDot = document.createElement("div");
+redDot.style.width = "10px";  // Set width of the red dot
+redDot.style.height = "10px"; // Set height of the red dot
+redDot.style.backgroundColor = "red"; // Set the color to red
+redDot.style.borderRadius = "50%"; // Make it circular
+redDot.style.border = "2px solid #fff"; // Optional: add a white border for contrast
+redDot.style.boxShadow = "0 0 2px rgba(0, 0, 0, 0.4)"; // Optional: add some shadow for better visibility
+
     const marker = new AdvancedMarkerElement({
       map: map,
       position: { lat: lat, lng: lng },
       title: printlocation,
-  icon: {
-    url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-        <circle cx="10" cy="10" r="8" fill="red"/>
-      </svg>
-    `),
-    scaledSize: new google.maps.Size(10, 10), // Set the size of the marker
+      content: redDot
   }
 
     });
