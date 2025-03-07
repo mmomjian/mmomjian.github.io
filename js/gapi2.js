@@ -47,6 +47,14 @@ let currentInfoWindow = null; // Store the currently opened InfoWindow
         currentInfoWindow = infoWindow;
       });
 
+      marker.addListener("mouseenter", () => {
+        if (currentInfoWindow) {
+          currentInfoWindow.close();
+        }
+        infoWindow.open(map, marker);
+        currentInfoWindow = infoWindow;
+      });
+
       marker.addListener("mouseout", () => {
         if (currentInfoWindow) {
           currentInfoWindow.close();
