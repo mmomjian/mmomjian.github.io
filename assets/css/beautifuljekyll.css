@@ -1113,15 +1113,15 @@ pre {
 #nav-search-icon {
   display: inline-block;
 }
-#nav-search-text #nav-dark-text {
+#nav-search-text, #nav-dark-text {
   display: none;
 }
 
 @media (max-width: 1199px) {
-  #nav-search-icon #nav-dark-icon {
+  #nav-search-icon, #nav-dark-icon {
     display: none;
   }
-  #nav-search-text #nav-dark-text {
+  #nav-search-text, #nav-dark-text {
     display: inline-block;
   }
 }
