@@ -17,16 +17,16 @@ async function initMap() {
   });
 
   matthew_momjian_geo_locations.forEach((location) => {
-    var city = location[1] + ", " + location[0];
+    var city = location.city + ", " + location.country;
     const marker = new AdvancedMarkerElement({
       map: map,
-      position: { lat: location[3], lng: location[4] },
+      position: { lat: location.lat, lng: location.lng },
       title: city,
     });
 
       // Create InfoWindow for subtitle/description
       const infoWindow = new google.maps.InfoWindow({
-        content: `<h3>${city}</h3><p>${location[2]}</p>`,
+        content: `<h3>${city}</h3><p>${location.years}</p>`,
       });
 
     marker.addListener("gmp-click", () => {
