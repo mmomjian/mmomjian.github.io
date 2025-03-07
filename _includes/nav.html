@@ -39,8 +39,11 @@
         </li>
       {%- endif -%}
   <li class="nav-item">
-    <span id="theme-toggle" class="theme-toggle-btn" title="Toggle Dark Mode">🌙</span>
-      <script src="{{ '/js/dark.js' | relative_url }}"></script>
+          <a class="nav-link" id="nav-dark-link" href="#" title="Dark">
+    <span id="nav-dark-icon" class="fa fa-moon></span>
+            <span id="nav-dark-text">Dark</span>
+
+      <script src="{{ '/js/dark.js' | relative_url }}"></script></a>
         </li>
     </ul>
   </div>
