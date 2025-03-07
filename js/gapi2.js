@@ -32,8 +32,12 @@ const isMobile = false; // window.matchMedia("(pointer: coarse)").matches;
 
     // Create InfoWindow for subtitle/description
     const infoWindow = new google.maps.InfoWindow({
-      content: `<h3>${printlocation}</h3><p>${years}</p>`,
+      content: `<div style="font-size: 14px; max-width: 180px; padding: 6px;
+                         background: rgba(255, 255, 255, 0.9); border-radius: 5px;">
+                 <strong>${printlocation}</strong><br>${years}
+               </div>`
     });
+//      content: `<h3>${printlocation}</h3><p>${years}</p>`,
 
     // Show InfoWindow on marker click and close the previous one
     marker.addListener("gmp-click", () => {
