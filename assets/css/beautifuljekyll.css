@@ -1113,7 +1113,7 @@ pre {
 #nav-search-icon {
   display: inline-block;
 }
-#nav-search-text {
+#nav-search-text #nav-dark-text {
   display: none;
 }
 
@@ -1121,7 +1121,7 @@ pre {
   #nav-search-icon {
     display: none;
   }
-  #nav-search-text {
+  #nav-search-text #nav-dark-text {
     display: inline-block;
   }
 }
