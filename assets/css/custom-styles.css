@@ -48,3 +48,7 @@ a {
 #theme-toggle {
   border: none; /* Remove the default border */
 }
+#theme-toggle:focus {
+  outline: none; /* Remove the focus outline */
+  box-shadow: none; /* Prevent any box-shadow on focus */
+}
