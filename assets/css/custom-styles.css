@@ -7,3 +7,40 @@
 .intro-header .page-heading h1 {
     font-size: 2.75rem;
 }
+
+
+/* dark, added */
+
+/* Default light theme */
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --link-color: blue;
+}
+
+/* Dark theme */
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --link-color: #bb86fc;
+}
+
+/* Apply colors */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
