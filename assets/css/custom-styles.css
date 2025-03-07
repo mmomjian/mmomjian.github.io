@@ -45,3 +45,6 @@ a {
   font-size: 0.75rem;
   cursor: pointer;
 }*/
+#theme-toggle {
+  border: none; /* Remove the default border */
+}
