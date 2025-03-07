@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("nav-dark-link");
+    const icon = document.getElementById("nav-dark-icon");
     const currentTheme = localStorage.getItem("theme");
 
     if (currentTheme === "dark") {
