@@ -39,6 +39,23 @@ async function initMap() {
     });
 
 
+      marker.addListener("mouseover", () => {
+        if (currentInfoWindow) {
+          currentInfoWindow.close();
+        }
+        infoWindow.open(map, marker);
+        currentInfoWindow = infoWindow;
+      });
+
+      marker.addListener("mouseout", () => {
+        if (currentInfoWindow) {
+          currentInfoWindow.close();
+          currentInfoWindow = null;
+        }
+      });
+
+
+
 
   });
 }
