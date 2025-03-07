@@ -37,7 +37,7 @@ redDot.style.boxShadow = "0 0 2px rgba(0, 0, 0, 0.4)"; // Optional: add some sha
       position: { lat: lat, lng: lng },
       title: printlocation,
       content: redDot,
-headerDisabled: true
+//headerDisabled: true
     });
 
 
