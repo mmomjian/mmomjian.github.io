@@ -49,7 +49,7 @@ redDot.style.boxShadow = "0 0 2px rgba(0, 0, 0, 0.4)"; // Optional: add some sha
     });
 
 
-      marker.addEventListener("gmp-click", () => {
+      marker.addListener("gmp-click", () => {
         if (currentInfoWindow) {
           currentInfoWindow.close();
         }
@@ -63,7 +63,7 @@ redDot.style.boxShadow = "0 0 2px rgba(0, 0, 0, 0.4)"; // Optional: add some sha
   });
 
 // Close InfoWindow on any map click
-map.addEventListener("gmp-click", () => {
+map.addListener("gmp-click", () => {
   if (currentInfoWindow) {
     currentInfoWindow.close();
     currentInfoWindow = null;  // Reset currentInfoWindow after closing
