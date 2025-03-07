@@ -33,7 +33,7 @@ const isMobile = window.matchMedia("(pointer: coarse)").matches;
       // Create InfoWindow for subtitle/description
       const infoWindow = new google.maps.InfoWindow({
       content: `<div style="font-size: 14px; max-width: 200px; padding: 8px; background: rgba(255, 255, 255, 0.8); border-radius: 5px;">
-                 <h3 style="margin: 0; font-size: 16px;">${locationprint}</h3>
+                 <h3 style="margin: 0; font-size: 16px;">${printlocation}</h3>
                  <p style="margin: 0; color: #555;">${years}</p>
                </div>`
       });
