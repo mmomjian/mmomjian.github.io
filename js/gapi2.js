@@ -3,8 +3,8 @@ let map;
 
 async function initMap() {
 
-let currentInfoWindow = null; // Store the currently opened InfoWindow
-const isMobile = false; // window.matchMedia("(pointer: coarse)").matches;
+//let currentInfoWindow = null; // Store the currently opened InfoWindow
+//const isMobile = false; // window.matchMedia("(pointer: coarse)").matches;
 
   // The location of Uluru
   const position = { lat: 39.955026386738666, lng: -75.15922757156757 };
@@ -23,6 +23,9 @@ const isMobile = false; // window.matchMedia("(pointer: coarse)").matches;
   matthew_momjian_geo_locations.forEach((location) => {
     const [country, city, years, lat, lng] = location;
     var printlocation = city ? `${city}, ${country}` : country;
+    var info_offset = new google.maps.Size(10, -15);
+
+    var close_timeout = null, close_func, in_mouseover = false;
 
     const marker = new AdvancedMarkerElement({
       map: map,
@@ -30,23 +33,51 @@ const isMobile = false; // window.matchMedia("(pointer: coarse)").matches;
       title: printlocation,
     });
 
-    // Create InfoWindow for subtitle/description
-    const infoWindow = new google.maps.InfoWindow({
-      content: `<div style="font-size: 14px; max-width: 180px; padding: 6px;
-                         background: rgba(255, 255, 255, 0.9); border-radius: 5px;">
-                 <strong>${printlocation}</strong><br>${years}
-               </div>`
-    });
-//      content: `<h3>${printlocation}</h3><p>${years}</p>`,
 
-    // Show InfoWindow on marker click and close the previous one
-    marker.addListener("gmp-click", () => {
-      if (currentInfoWindow) {
-        currentInfoWindow.close(); // Close the previously opened InfoWindow
-      }
-      infoWindow.open(map, marker); // Open the new InfoWindow
-      currentInfoWindow = infoWindow; // Set the new InfoWindow as the current one
-    });
+      // create info box
+      var infowindow = new InfoBox({
+        content: `${printlocation}<br>${years}`,
+        disableAutoPan: true,
+        closeBoxURL: '',
+        enableEventPropagation: true, // used for map labels
+        pixelOffset: info_offset
+      });
+
+      // Show this marker's description when the mouse is over it
+      google.maps.event.addListener(marker, 'mouseover', function() {
+        infowindow.open(map, marker);
+        in_mouseover = true;
+      });
+      google.maps.event.addListener(marker, 'mouseout', function() {
+        infowindow.close(map, marker);
+        in_mouseover = false;
+      });
+
+      // For touch screens
+      google.maps.event.addListener(marker, 'mousedown', function() {
+        // don't use click timer in mouse over
+        if (!in_mouseover)
+        {
+            // close an open window?
+            if (close_timeout !== null)
+            {
+	        // must be first
+	        clearTimeout(close_timeout);
+	        close_func();
+            }
+            infowindow.open(map, marker);
+         }
+      });
+      google.maps.event.addListener(marker, 'mouseup', function() {
+        if (!in_mouseover)
+        {
+            // give time to view the text once finger is removed
+            close_func = function() { close_timeout = null; infowindow.close(map, marker); };
+
+            close_timeout = setTimeout(close_func, 4000);
+        }
+      });
+
 
 
   });
