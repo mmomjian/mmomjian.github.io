@@ -67,7 +67,7 @@ map.addListener("click", () => {
     currentInfoWindow.close();
     currentInfoWindow = null;  // Reset currentInfoWindow after closing
   }
-
+ });
 }
 
 initMap();
