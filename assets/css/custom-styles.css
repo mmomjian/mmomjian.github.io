@@ -38,28 +38,11 @@ body,footer {
 a {
   color: var(--link-color);
 }
-
-/*#theme-toggle {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  width: 40px; /* Ensures a proper clickable area
-  background: none;
-  border: none;
-  font-size: 0.75rem;
-  cursor: pointer;
-}*/
-/*#theme-toggle {
-  border: none;
-}
-#theme-toggle:focus {
-  outline: none;  Remove the focus outline 
-  box-shadow: none; /* Prevent any box-shadow on focus 
-}
-*/
-
 /* Hide the close button in InfoWindow */
 .gm-style-iw-chr .google-maps .gm-style-iw-closebtn {
   display: none !important;
 }
 .gm-style-iw + button {display: none;}
+button.gm-ui-hover-effect {
+  display: none !important;
+}
