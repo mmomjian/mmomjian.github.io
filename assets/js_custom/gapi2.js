@@ -42,8 +42,8 @@ redDot.style.boxShadow = "0 0 2px rgba(0, 0, 0, 0.4)"; // Optional: add some sha
 
 
     const infoWindow = new google.maps.InfoWindow({
-      content: `<div style="font-size: 14px; max-width: 180px; padding: 6px; 
-                         background: rgba(255, 255, 255, 0.9); border-radius: 5px;">
+      content: `<div style="font-size: 14px; max-width: 180px; padding: 0px;
+                         background: rgba(255, 255, 255, 0.9); border-radius: 1px;">
                  <strong>${printlocation}</strong><br>${years}
                </div>`
     });
@@ -63,7 +63,7 @@ redDot.style.boxShadow = "0 0 2px rgba(0, 0, 0, 0.4)"; // Optional: add some sha
   });
 
 // Close InfoWindow on any map click
-map.addListener("gmp-click", () => {
+map.addListener("click", () => {
   if (currentInfoWindow) {
     currentInfoWindow.close();
     currentInfoWindow = null;  // Reset currentInfoWindow after closing
