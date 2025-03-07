@@ -29,10 +29,13 @@ async function initMap() {
         content: `<h3>${city}</h3><p>${location[2]}</p>`,
       });
 
-      // Show InfoWindow on marker click
-      marker.addListener("gmp-click", () => {
-        infoWindow.open(map, marker);
-      });
+    marker.addListener("gmp-click", () => {
+      if (currentInfoWindow) {
+        currentInfoWindow.close(); // Close the previously opened InfoWindow
+      }
+      infoWindow.open(map, marker); // Open the new InfoWindow
+      currentInfoWindow = infoWindow; // Set the new InfoWindow as the current one
+    });
 
   });
 }
