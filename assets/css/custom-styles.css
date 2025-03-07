@@ -7,3 +7,43 @@
 .intro-header .page-heading h1 {
     font-size: 2.75rem;
 }
+
+
+/* dark, added */
+
+/* Default light theme */
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --link-color: blue;
+  --navbar-col: #eaeaea;
+  --navbar-text-col: #404040;
+}
+
+/* Dark theme */
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --link-color: #bb86fc;
+  --navbar-col: #121212;
+  --navbar-text-col: #e0e0e0;
+}
+
+/* Apply colors */
+body,footer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+/* Hide the close button in InfoWindow */
+.gm-style-iw-chr .google-maps .gm-style-iw-closebtn {
+  display: none !important;
+}
+.gm-style-iw + button {display: none;}
+button.gm-ui-hover-effect {
+  display: none !important;
+}
+
