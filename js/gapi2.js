@@ -39,7 +39,7 @@ let currentInfoWindow = null; // Store the currently opened InfoWindow
     });
 
 
-      marker.addListener("mouseover", () => {
+      marker.addListener("gmp-click", () => {
         if (currentInfoWindow) {
           currentInfoWindow.close();
         }
