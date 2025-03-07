@@ -30,42 +30,21 @@ const isMobile = false; // window.matchMedia("(pointer: coarse)").matches;
       title: printlocation,
     });
 
-      console.log(printlocation+years);
-      // Create InfoWindow for subtitle/description
-      const infoWindow = new google.maps.InfoWindow({
-      content: `<div style="font-size: 14px; max-width: 200px; padding: 8px; background: rgba(255, 255, 255, 0.8); border-radius: 5px;">
-                 <h3 style="margin: 0; font-size: 16px;">${printlocation}</h3>
-                 <p style="margin: 0; color: #555;">${years}</p>
-               </div>`
-      });
+    // Create InfoWindow for subtitle/description
+    const infoWindow = new google.maps.InfoWindow({
+      content: `<h3>${printlocation}</h3><p>${years}</p>`,
+    });
 
-    if (isMobile) {
-      // MOBILE: Open popup on tap, close previous one
-      marker.addListener("gmp-click", () => {
-        if (currentInfoWindow) {
-          currentInfoWindow.close();
-        }
-        infoWindow.open(map, marker);
-        currentInfoWindow = infoWindow;
-      });
+    // Show InfoWindow on marker click and close the previous one
+    marker.addListener("gmp-click", () => {
+      if (currentInfoWindow) {
+        currentInfoWindow.close(); // Close the previously opened InfoWindow
+      }
+      infoWindow.open(map, marker); // Open the new InfoWindow
+      currentInfoWindow = infoWindow; // Set the new InfoWindow as the current one
+    });
 
-    } else {
-      // DESKTOP: Open on hover, close on mouseout
-      marker.addListener("mouseover", () => {
-        if (currentInfoWindow) {
-          currentInfoWindow.close();
-        }
-        infoWindow.open(map, marker);
-        currentInfoWindow = infoWindow;
-      });
 
-      marker.addListener("mouseout", () => {
-        if (currentInfoWindow) {
-          currentInfoWindow.close();
-          currentInfoWindow = null;
-        }
-      });
-    }
   });
 }
 
