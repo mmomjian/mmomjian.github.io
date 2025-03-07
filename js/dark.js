@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.add("dark-mode");
         icon.classList.remove("fa-moon");
         icon.classList.add("fa-sun"); // Show sun icon when dark mode is active
+    } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon"); // Show moon icon when light mode is active
     }
 
     toggleButton.addEventListener("click", function () {
