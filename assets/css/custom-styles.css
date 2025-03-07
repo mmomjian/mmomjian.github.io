@@ -39,11 +39,11 @@ a {
   color: var(--link-color);
 }
 /* Hide the close button in InfoWindow */
-/*.gm-style-iw-chr .google-maps .gm-style-iw-closebtn {
+.gm-style-iw-chr .google-maps .gm-style-iw-closebtn {
   display: none !important;
 }
 .gm-style-iw + button {display: none;}
 button.gm-ui-hover-effect {
   display: none !important;
 }
-*/
+

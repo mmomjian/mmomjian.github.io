@@ -49,7 +49,7 @@ headerDisabled: true
     });
 
 
-      marker.addListener("gmp-click", () => {
+      marker.addEventListener("gmp-click", () => {
         if (currentInfoWindow) {
           currentInfoWindow.close();
         }
@@ -63,7 +63,7 @@ headerDisabled: true
   });
 
 // Close InfoWindow on any map click
-map.addListener("click", () => {
+map.addEventListener("gmp-click", () => {
   if (currentInfoWindow) {
     currentInfoWindow.close();
     currentInfoWindow = null;  // Reset currentInfoWindow after closing
