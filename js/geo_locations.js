@@ -2,9 +2,7 @@
 var matthew_momjian_geo_locations = [
 
     // point directly to the house
-    ["USA", "My home, Newtown Square, Pennsylvania", "", 40.0035, -75.4005],
-
-
+    ["USA", "My home, Philadelphia, Pennsylvania", "", 40.02449740080251, -75.04226415057502],
 
     ["Armenia", "Yerevan", "2004 (5 days), 2012 (7 days), 2022 (10 days)", 40.1811111, 44.5136111],
     ["Armenia", "Vardenis", "2012 (6 days)", 40.1805556, 45.7283333],
@@ -89,7 +87,7 @@ var matthew_momjian_geo_locations = [
     ["USA", "Ketchikan, Alaska", "1996 (1 day)", 55.3422222, -131.6461111],
     ["USA", "Lancaster, Pennsylvania", "2010 (attended college)", 40.0377778, -76.3058333],
     ["USA", "Las Vegas, Nevada", "2009 (3 days)", 36.1750000, -115.1363889],
-    ["USA", "Lander, Wyoming", "2017 (1 week)", 42.831642, -108.726787], 
+    ["USA", "Lander, Wyoming", "2017 (1 week)", 42.831642, -108.726787],
     ["USA", "Longmont, Colorado", "2013 (2 days)", 40.1672222, -105.1013889],
     ["USA", "Miami, Florida", "2019 (1 day)", 25.7738889, -80.1938889],
     ["USA", "Morristown, New Jersey", "2022 (3 days)", 40.779145758064104, -74.44351501730968],
@@ -134,6 +132,6 @@ var matthew_momjian_geo_locations = [
     ["USA", "Williamsburg, Virginia", "2008 (3 days)", 37.2705556, -76.7077778],
     ["USA", "Williamsport, Pennsylvania", "1990 (3 days)", 41.2411111, -77.0013889],
     ["USA", "Winter Haven, Florida", "2012 (1 day)", 28.0219444, -81.7330556],
-    ["USA", "Yorktown, Virginia", "2008 (1 day)", 37.2386111, -76.5100000]
+    ["USA", "Yorktown, Virginia", "2008 (1 day)", 37.2386111, -76.5100000],
 
 ];
