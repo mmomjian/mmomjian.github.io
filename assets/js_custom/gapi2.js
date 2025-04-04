@@ -57,7 +57,7 @@ dot.style.boxShadow = "0 0 2px rgba(0, 0, 0, 0.4)"; // Optional: add some shadow
         currentInfoWindow = infoWindow;
       });
 
-      marker.addListener("mouseover", () => {
+      marker.content.addListener("mouseenter", () => {
         if (currentInfoWindow !== infoWindow) {
           if (currentInfoWindow) {
             currentInfoWindow.close();
