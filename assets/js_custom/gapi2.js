@@ -67,6 +67,13 @@ dot.style.boxShadow = "0 0 2px rgba(0, 0, 0, 0.4)"; // Optional: add some shadow
         }
       });
 
+      marker.content.addEventListener("mouseleave", () => {
+        if (currentInfoWindow === infoWindow) {
+          infoWindow.close();
+          currentInfoWindow = null;
+        }
+      });
+
   });
 
 // Close InfoWindow on any map click
