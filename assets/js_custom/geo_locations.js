@@ -2,7 +2,7 @@
 var matthew_momjian_geo_locations = [
 
     // point directly to the house
-    ["USA", "My home, Philadelphia, Pennsylvania", "", 40.02449740080251, -75.04226415057502],
+    ["USA", "My home, Philadelphia, Pennsylvania", "", 40.02449740080251, -75.04226415057502, "green"],
 
     ["Armenia", "Yerevan", "2004 (5 days), 2012 (7 days), 2022 (10 days), 2023, 2024", 40.1811111, 44.5136111],
     ["Armenia", "Vanadzor", "2022 (5 days), 2023 (5 days)", 40.81801443968499, 44.47647481518576],
