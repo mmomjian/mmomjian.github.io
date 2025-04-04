@@ -47,7 +47,8 @@ button.gm-ui-hover-effect {
   display: none !important;
 }
 
-.custom-info-window-old {
+.custom-info-window {
+	// InfoWindow has limited customization
 //	max-width: 180px;
 	padding: 0px;
 	background: rgba(255, 255, 255, 0.9);
@@ -63,19 +64,4 @@ button.gm-ui-hover-effect {
   border: none;
   margin: 0;
 
-}
-
-.custom-info-window {
-	color: black;
-	background: #ffff99;
-	margin: 0;
-	text-align: center;
-	font-weight: bold;
-	padding: 2px 4px;
-	white-space: nowrap;
-
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 5px;
-	border-color: #555555;
 }
