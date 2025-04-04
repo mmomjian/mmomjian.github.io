@@ -25,11 +25,11 @@ let currentInfoWindow = null; // Store the currently opened InfoWindow
     var printlocation = city ? `${city}, ${country}` : country;
 
 const dot = document.createElement("div");
-dot.style.width = "16px";  // Set width of the red dot
-dot.style.height = "16px"; // Set height of the red dot
+dot.style.width = "12px";  // Set width of the red dot
+dot.style.height = "12px"; // Set height of the red dot
 dot.style.backgroundColor = color; // Set the color as passed in
 dot.style.borderRadius = "50%"; // Make it circular
-dot.style.border = "2px solid #fff"; // Optional: add a white border for contrast
+dot.style.border = "1px solid #fff"; // Optional: add a white border for contrast
 dot.style.boxShadow = "0 0 2px rgba(0, 0, 0, 0.4)"; // Optional: add some shadow for better visibility
 
     const marker = new AdvancedMarkerElement({
