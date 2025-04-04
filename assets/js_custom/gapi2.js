@@ -25,8 +25,8 @@ let currentInfoWindow = null; // Store the currently opened InfoWindow
     var printlocation = city ? `${city}, ${country}` : country;
 
 const dot = document.createElement("div");
-dot.style.width = "9px";  // Set width of the red dot
-dot.style.height = "9px"; // Set height of the red dot
+dot.style.width = "11px";  // Set width of the red dot
+dot.style.height = "11px"; // Set height of the red dot
 dot.style.backgroundColor = color; // Set the color as passed in
 dot.style.borderRadius = "50%"; // Make it circular
 dot.style.border = "2px solid #fff"; // Optional: add a white border for contrast
