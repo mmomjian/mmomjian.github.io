@@ -141,7 +141,7 @@ var matthew_momjian_geo_locations = [
     ["USA", "Shenandoah National Park", "2020 (4 days)", 38.528574037982395, -78.43704165549674],
     ["USA", "Sitka, Alaska", "1996 (1 day)", 57.0530556, -135.3300000],
     ["USA", "Springdale, Utah", "2009 (2 days)", 37.1888889, -112.9977778],
-    ["USA", "Sterling, Virginia", "2021 (3 days)", 38.978105988772604, -77.42630104620164],
+    ["USA", "Sterling, Virginia", "2021 (3 days), 2025 (3 days)", 38.978105988772604, -77.42630104620164],
     ["USA", "Stone Harbor, New Jersey", "2000 (8 days), 2002 (3 days)", 39.0508333, -74.7583333],
     ["USA", "Stow, Massachusetts", "2008 (4 days), 2011 (2 days), 2012 (5 days), 2014 (7 days), 2020 (3 days)", 42.4369444, -71.5061111],
     ["USA", "Valdez, Alaska", "1996 (1 day)", 61.1158333, -146.2663889],
