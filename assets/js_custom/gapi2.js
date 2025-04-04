@@ -42,8 +42,7 @@ dot.style.boxShadow = "0 0 2px rgba(0, 0, 0, 0.4)"; // Optional: add some shadow
 
 
     const infoWindow = new google.maps.InfoWindow({
-      content: `<div style="font-size: 14px; max-width: 180px; padding: 0px;
-                         background: rgba(255, 255, 255, 0.9); border-radius: 0px;">
+      content: `<div class="custom-info-window">
                  <strong>${printlocation}</strong><br>${years}
                </div>`
     });
