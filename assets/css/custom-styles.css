@@ -48,7 +48,6 @@ button.gm-ui-hover-effect {
 }
 
 div.infoBox {
-	
 	color: black;
 	background: #ffff99;
 	margin: 0;
@@ -62,3 +61,18 @@ div.infoBox {
 	border-radius: 5px;
 	border-color: #555555;
 }
+
+.custom-info-window {
+//	max-width: 180px;
+	padding: 0px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 0px;
+  font-size: 12px;
+  max-width: 120px;
+//  padding: 2px 5px;
+//  background: #fff;
+  border: none;
+//  border-radius: 3px;
+  box-shadow: none;
+}
+
