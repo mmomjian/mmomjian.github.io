@@ -46,7 +46,7 @@ var matthew_momjian_geo_locations = [
     ["Italy", "Rome", "2023 (4 days)", 41.903309950732876, 12.503714935189032],
     ["Italy", "Florence", "2023 (4 days)", 43.77586059318265, 11.244572142568996],
     ["Cayman Islands", "George Town", "1994 (1 day)", 19.3, -81.3833333],
-    ["Guatamala", "Port of San Jose", "2002 (1 day)", 13.9255556, -90.8244444],
+    ["Guatemala", "Port of San Jose", "2002 (1 day)", 13.9255556, -90.8244444],
     ["Japan", "Tokyo", "2003 (4 days), 2016 (7 days), 2023 (5 days)", 35.685, 139.7513889],
     ["Japan", "Kyoto", "2023 (4 days)", 35.01681157505789, 135.71331498422913],
     ["Korea", "Seoul", "2016 (4 days), 2024 (1 day)", 37.5663889, 126.9997222],
