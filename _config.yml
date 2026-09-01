@@ -56,19 +56,20 @@ round-avatar: true
 social-network-links:
 #  email: "someone@example.com"
 #  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: mmomjian
+  linkedin: mmomjian
+  google-scholar: 4Ph54jQAAAAJ
   github: mmomjian
   twitter: mpmomjian
+  facebook: mmomjian
+  instagram: mmomjian
 #  patreon: DeanAttali
   youtube: "@mmomjian"
 #  whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
-  linkedin: mmomjian
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-  instagram: mmomjian
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
@@ -79,7 +80,6 @@ social-network-links:
 #  mastodon: instance.url/@username
 #  bluesky: yourname
 #  ORCID: your ORCID ID
-  google-scholar: 4Ph54jQAAAAJ
 #  discord: "invite_code" or "users/userid" or "invite/invite_code"
 #  kaggle: yourname
 #  hackerrank: yourname
