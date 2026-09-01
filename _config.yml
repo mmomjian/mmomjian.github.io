@@ -181,7 +181,8 @@ site-css:
 #################################
 
 # Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
-gtag: "UA-140841814-1"
+#gtag: "UA-140841814-1"
+## TODO switch to a newer  / netter one? v4?
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
 #cloudflare_analytics: ""
