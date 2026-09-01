@@ -21,6 +21,7 @@ author: Matthew Momjian
 
 navbar-links:
   About Me: "aboutme"
+  Projects: "projects"
   Travel: "travel"
   CV (PDF): "content/Momjian_CV.pdf"
 #   - Curriculum Vitae: "content/Momjian_CV.pdf"
