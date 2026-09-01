@@ -1,87 +1,65 @@
 // Initialize and add the map
 let map;
 
-async function initMap() {
+function initMap() {
 
-let currentInfoWindow = null; // Store the currently opened InfoWindow
-//const isMobile = false; // window.matchMedia("(pointer: coarse)").matches;
+  let currentPopup = null; // Store the currently opened popup
 
   // The location of Uluru
-  const position = { lat: 39.955026386738666, lng: -75.15922757156757 };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+  const position = [39.955026386738666, -75.15922757156757];
 
   // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
-    zoom: 2,
-    center: position,
-    mapId: "MY_MAP_ONE",
-  });
+  map = L.map("map").setView(position, 2);
+  map.attributionControl.setPrefix(false);
+
+  // OSM consolidated to a single tile host; the old a/b/c subdomain sharding is no longer used
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
 
   matthew_momjian_geo_locations.forEach((location) => {
     const [country, city, years, lat, lng, color = "red"] = location;
     var printlocation = city ? `${city}, ${country}` : country;
 
-const dot = document.createElement("div");
-dot.style.width = "11px";  // Set width of the red dot
-dot.style.height = "11px"; // Set height of the red dot
-dot.style.backgroundColor = color; // Set the color as passed in
-dot.style.borderRadius = "50%"; // Make it circular
-dot.style.border = "2px solid #fff"; // Optional: add a white border for contrast
-dot.style.boxShadow = "0 0 2px rgba(0, 0, 0, 0.4)"; // Optional: add some shadow for better visibility
+    const marker = L.circleMarker([lat, lng], {
+      radius: 6,
+      color: "#fff",
+      weight: 2,
+      fillColor: color,
+      fillOpacity: 1,
+    }).addTo(map);
 
-    const marker = new AdvancedMarkerElement({
-      map: map,
-      position: { lat: lat, lng: lng },
-      title: printlocation,
-      content: dot,
-//headerDisabled: true
-    });
-
-
-    const infoWindow = new google.maps.InfoWindow({
-      content: `<div class="custom-info-window">
+    const popupContent = `<div class="custom-info-window">
                  <strong>${printlocation}</strong><br>${years}
-               </div>`
+               </div>`;
+
+    marker.bindPopup(popupContent);
+
+    marker.on("mouseover", () => {
+      if (currentPopup && currentPopup !== marker) {
+        currentPopup.closePopup();
+      }
+      marker.openPopup();
+      currentPopup = marker;
     });
 
-
-      marker.addListener("gmp-click", () => {
-        if (currentInfoWindow) {
-          currentInfoWindow.close();
-        }
-        infoWindow.open(map, marker);
-        currentInfoWindow = infoWindow;
-      });
-
-      marker.content.addEventListener("mouseenter", () => {
-        if (currentInfoWindow !== infoWindow) {
-          if (currentInfoWindow) {
-            currentInfoWindow.close();
-          }
-          infoWindow.open(map, marker);
-          currentInfoWindow = infoWindow;
-        }
-      });
-
-      marker.content.addEventListener("mouseleave", () => {
-        if (currentInfoWindow === infoWindow) {
-          infoWindow.close();
-          currentInfoWindow = null;
-        }
-      });
+    marker.on("mouseout", () => {
+      if (currentPopup === marker) {
+        marker.closePopup();
+        currentPopup = null;
+      }
+    });
 
   });
 
-// Close InfoWindow on any map click
-map.addListener("click", () => {
-  if (currentInfoWindow) {
-    currentInfoWindow.close();
-    currentInfoWindow = null;  // Reset currentInfoWindow after closing
-  }
- });
+  // Close popup on any map click
+  map.on("click", () => {
+    if (currentPopup) {
+      currentPopup.closePopup();
+      currentPopup = null;
+    }
+  });
 }
 
 initMap();
