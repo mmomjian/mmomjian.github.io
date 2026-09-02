@@ -1,22 +1,35 @@
 // Initialize and add the map
 let map;
 
-function initMap() {
+async function initMap() {
 
   let currentPopup = null; // Store the currently opened popup
 
-  // The location of Uluru
-  const position = [39.955026386738666, -75.15922757156757];
+  // generic home town
+  const position = [39.95, -75.15];
 
   // The map, centered at Uluru
   map = L.map("map").setView(position, 2);
   map.attributionControl.setPrefix(false);
+  map.attributionControl.addAttribution(
+    '<a href="https://openfreemap.org">OpenFreeMap</a> ' +
+    '<a href="https://www.openmaptiles.org/">&copy; OpenMapTiles</a> ' +
+    'Data from <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  );
 
-  // OSM consolidated to a single tile host; the old a/b/c subdomain sharding is no longer used
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(map);
+  // OpenFreeMap's "liberty" style is vector tiles, so labels can be rewritten
+  // client-side. Its default text-field concatenates a Latin transliteration
+  // with the local script (e.g. "Tokyo 東京"); swap that for name_en so labels
+  // are normalized to English.
+  const style = await fetch("https://tiles.openfreemap.org/styles/liberty").then((r) => r.json());
+  style.layers.forEach((layer) => {
+    const textField = layer.layout && layer.layout["text-field"];
+    if (layer.type === "symbol" && textField && JSON.stringify(textField).includes("name:nonlatin")) {
+      layer.layout["text-field"] = ["coalesce", ["get", "name_en"], ["get", "name"]];
+    }
+  });
+
+  L.maplibreGL({ style }).addTo(map);
 
   matthew_momjian_geo_locations.forEach((location) => {
     const [country, city, years, lat, lng, color = "red"] = location;
