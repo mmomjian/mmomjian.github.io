@@ -11,11 +11,6 @@ async function initMap() {
   // The map, centered at Uluru
   map = L.map("map").setView(position, 2);
   map.attributionControl.setPrefix(false);
-  map.attributionControl.addAttribution(
-    '<a href="https://openfreemap.org">OpenFreeMap</a> ' +
-    '<a href="https://www.openmaptiles.org/">&copy; OpenMapTiles</a> ' +
-    'Data from <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  );
 
   // OpenFreeMap's "liberty" style is vector tiles, so labels can be rewritten
   // client-side. Its default text-field concatenates a Latin transliteration
