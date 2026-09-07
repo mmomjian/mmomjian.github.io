@@ -1,20 +1,26 @@
-document.addEventListener("DOMContentLoaded", function () {
+(function () {
 
     const toggleButton = document.getElementById("nav-dark-link");
     const icon = document.getElementById("nav-dark-icon");
     const currentTheme = localStorage.getItem("theme");
     const text = document.getElementById("nav-dark-text");
 
+    // Icon and text both show the theme that is currently active; the
+    // accessible label and tooltip describe what a click will do.
     function makeDark () {
-        icon.classList.remove("fa-moon");
-        icon.classList.add("fa-sun"); // Show sun icon when dark mode is active
-        text.innerHTML = "Light mode";
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+        text.innerHTML = "Dark mode";
+        toggleButton.setAttribute("aria-label", "Switch to light mode");
+        toggleButton.setAttribute("title", "Switch to light mode");
  return; }
 
     function makeLight () {
-        icon.classList.remove("fa-sun");
-        icon.classList.add("fa-moon"); // Show moon icon when light mode is active
-        text.innerHTML = "Dark mode";
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+        text.innerHTML = "Light mode";
+        toggleButton.setAttribute("aria-label", "Switch to dark mode");
+        toggleButton.setAttribute("title", "Switch to dark mode");
  return; }
 
     if (currentTheme === "dark") {
@@ -24,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
         makeLight();
     }
 
-    toggleButton.addEventListener("click", function () {
+    toggleButton.addEventListener("click", function (e) {
+        e.preventDefault();
         document.body.classList.toggle("dark-mode");
         if (document.body.classList.contains("dark-mode")) {
             localStorage.setItem("theme", "dark");
@@ -34,4 +41,4 @@ document.addEventListener("DOMContentLoaded", function () {
             makeLight();
         }
     });
-});
+})();
